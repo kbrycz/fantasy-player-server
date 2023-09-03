@@ -1,4 +1,4 @@
-# Fantasy Football API
+# Fantasy Football Backend Server
 
 ## Overview
 
@@ -26,6 +26,9 @@ Here's an example of creating a player:
 
 `curl -X POST -H "Authorization: Bearer YOUR_JWT_TOKEN" -d '{"firstName": "John", "lastName": "Doe", "team": "XYZ", "position": "QB", "value": 10}' http://localhost:3000/players`
 
+## Data
+
+Got this data from: https://github.com/bendominguez0111/fantasy-csv-data/blob/master/yearly/2021.csv
 
 ## Contributing
 
