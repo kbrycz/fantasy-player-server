@@ -3,6 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const playerRoutes = require('./routes/players');
+const cors = require('cors');
 
 // Initialize express
 const app = express();
@@ -17,6 +18,7 @@ mongoose.connect('mongodb+srv://admin:showmethemoney@fantasy.3y4sejg.mongodb.net
 
 // Middleware to parse JSON requests
 app.use(express.json());
+app.use(cors());
 
 // Use routes
 app.use('/players', playerRoutes);
